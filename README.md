@@ -2,4 +2,4 @@
 # 2024 - 1003651
 # INF241
 
-Laboratory 0: Discussiongit 
+Laboratory 0: Discussion
