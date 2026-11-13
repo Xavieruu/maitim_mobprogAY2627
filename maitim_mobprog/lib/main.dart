@@ -1,25 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '/screens/home_screen.dart';
+import '/screens/newsfeed_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MaitimFacebook());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MaitimFacebook extends StatelessWidget {
+  const MaitimFacebook({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Demo Home Page'),
-        ),
-        body: const Center(
-          child: Text('Hello World! I am Ashton Xavier E. Maitim'),
-
-        ),
-      ),
+    return ScreenUtilInit(
+      designSize: const Size(412, 715),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (_, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Facebook Replication',
+          initialRoute: '/home',
+          routes: {
+            '/newsfeed': (context) => const NewsFeedScreen(),
+            '/home': (context) => const HomeScreen(),
+          },
+        );
+      },
     );
   }
 }
