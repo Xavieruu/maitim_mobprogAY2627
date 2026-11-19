@@ -9,12 +9,14 @@ class NewsFeedCard extends StatelessWidget {
   final String date;
   final int numOfLikes;
   final bool hasImage;
+  final String? imagePath;
   const NewsFeedCard({
     super.key,
     required this.userName,
     required this.postContent,
     this.numOfLikes = 0,
     this.hasImage = false,
+    this.imagePath,
     required this.date,
   });
 
@@ -77,11 +79,16 @@ class NewsFeedCard extends StatelessWidget {
               color: Colors.black,
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
-            hasImage == true
-                ? const Placeholder()
-                : SizedBox(
-                    height: ScreenUtil().setHeight(1),
-                  ),
+            hasImage
+              ? (imagePath != null
+              ? Image.asset(
+                imagePath!,
+              width: double.infinity,
+              height: ScreenUtil().setHeight(200),
+              fit: BoxFit.cover,
+          )
+          : const Placeholder())
+          : SizedBox(height: ScreenUtil().setHeight(1)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -14,11 +14,12 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 100,
           date: 'October 11',
         ),
-        NewsFeedCard(
+        NewsFeedCard(  
           userName: 'Roben Juanatas',
           postContent: 'Kicking off the holiday season with ICpEP-NCR!',
           numOfLikes: 200,
           hasImage: true,
+          imagePath: 'assets/images/dog.jpg',
           date: 'December 2',
         ),
       ],
