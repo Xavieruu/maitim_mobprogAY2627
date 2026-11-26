@@ -30,13 +30,22 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: PageView(
         controller: _pageController,
-        children: const <Widget>[NewsFeedScreen()],
-        onPageChanged: (page) {
-          setState(() {
-            _selectedIndex = page;
-          });
-        },
-      ),
+        children: <Widget>[
+          const NewsFeedScreen(),
+          Center(
+            child: CustomText(
+              text: 'Notification',
+              fontSize: ScreenUtil().setSp(16),
+              color: Colors.black,
+              ),
+            ),
+          ],
+          onPageChanged: (page) {
+            setState(() {
+              _selectedIndex = page;
+              });
+            },
+          ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false, //selected item
         showUnselectedLabels: false, //unselected item
