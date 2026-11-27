@@ -4,7 +4,7 @@
 
 ---
 
-## Laboratory 3: Discussion
+## Laboratory 2: Discussion
 
 During the production of this Lab. Act 2, I stored the posts and notifications in lists and used ListView.builder and ListView.separated, so each entry becomes one widget and adding more is just adding another entry. Each post has its own likes, date, and image setting (photo, placeholder, or none). I also made the AppBar title change per tab, added a Profile tab, and changed the app name and colors.
 
