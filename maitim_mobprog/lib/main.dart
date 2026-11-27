@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '/screens/home_screen.dart';
-import '/screens/newsfeed_screen.dart';
+import 'package:maitim_mobprog/constants.dart';
+import 'package:maitim_mobprog/screens/home_screen.dart';
+import 'package:maitim_mobprog/screens/newsfeed_screen.dart';
+import 'package:maitim_mobprog/screens/notification_screen.dart';
 
 void main() => runApp(const MaitimFacebook());
 
@@ -17,10 +19,14 @@ class MaitimFacebook extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Facebook Replication',
+          title: APP_NAME,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: FB_PRIMARY),
+          ),
           initialRoute: '/home',
           routes: {
             '/newsfeed': (context) => const NewsFeedScreen(),
+            '/notification': (context) => const NotificationScreen(),
             '/home': (context) => const HomeScreen(),
           },
         );

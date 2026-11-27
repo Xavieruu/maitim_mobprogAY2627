@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-// App name
-const String APP_NAME = 'Facebook';
+// App name (change this one line to rename the app everywhere)
+const String APP_NAME = 'Kwentuhan';
 
 // Color palette (teal theme)
 const Color FB_PRIMARY = Color(0xFF2A9D8F);

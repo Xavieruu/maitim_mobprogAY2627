@@ -10,28 +10,28 @@ class NotificationScreen extends StatefulWidget {
 }
 
 class _NotificationScreenState extends State<NotificationScreen> {
-  // 20 notifications
+  // 20 notifications (name, post, description)
   final List<Map<String, String>> _notifications = [
-    {'name': 'Jade Ashley Bino', 'post': 'My pet happy dog!', 'description': 'Liked your post'},
-    {'name': 'Lebron James', 'post': 'My pet happy dog!', 'description': 'Commented on your post'},
-    {'name': 'Stephen Curry', 'post': 'My pet happy dog!', 'description': 'Shared your post'},
-    {'name': 'Cristiano Ronaldo', 'post': 'My pet happy dog!', 'description': 'Liked your post'},
-    {'name': 'Karl Andrew De Leon', 'post': 'Lab Activity 2', 'description': 'Tagged you in a post'},
-    {'name': 'Jerrymie Liwag', 'post': 'Lab Activity 2', 'description': 'Replied to your comment'},
-    {'name': 'Sophia Abegail Dagoc', 'post': 'My pet happy dog!', 'description': 'Liked your comment'},
-    {'name': 'Lionel Messi', 'post': 'My pet happy dog!', 'description': 'Liked your post'},
-    {'name': 'Jose Protacio Rizal', 'post': 'Wazzup facebook!', 'description': 'Shared your post'},
-    {'name': 'Manny Pacquiao', 'post': 'My pet happy dog!', 'description': 'Commented on your post'},
-    {'name': 'Kevin Durant', 'post': 'Weekend plans', 'description': 'Liked your post'},
     {'name': 'Taylor Swift', 'post': 'My pet happy dog!', 'description': 'Liked your post'},
-    {'name': 'Keanu Reeves', 'post': 'Weekend plans', 'description': 'Replied to your comment'},
-    {'name': 'Dwayne Johnson', 'post': 'My pet happy dog!', 'description': 'Shared your post'},
-    {'name': 'Neymar Jr', 'post': 'Lab Activity 2', 'description': 'Liked your comment'},
-    {'name': 'Giannis Antetokounmpo', 'post': 'My pet happy dog!', 'description': 'Commented on your post'},
-    {'name': 'Luka Doncic', 'post': 'Weekend plans', 'description': 'Liked your post'},
-    {'name': 'Jayson Tatum', 'post': 'My pet happy dog!', 'description': 'Tagged you in a photo'},
-    {'name': 'Kylian Mbappe', 'post': 'Lab Activity 2', 'description': 'Liked your post'},
-    {'name': 'Michael Jordan', 'post': 'My pet happy dog!', 'description': 'Shared your post'},
+    {'name': 'Karl Andrew De Leon', 'post': 'Lab Activity 2', 'description': 'Tagged you in a post'},
+    {'name': 'Bruno Mars', 'post': 'New profile picture', 'description': 'Commented on your post'},
+    {'name': 'Lebron James', 'post': 'Weekend plans', 'description': 'Shared your post to their feed'},
+    {'name': 'Billie Eilish', 'post': 'My pet happy dog!', 'description': 'Reacted to your post'},
+    {'name': 'Sophia Abegail Dagoc', 'post': 'Study session', 'description': 'Liked your comment'},
+    {'name': 'Ed Sheeran', 'post': 'Throwback photo', 'description': 'Replied to your comment'},
+    {'name': 'Jose Protacio Rizal', 'post': 'Wazzup facebook!', 'description': 'Shared your post'},
+    {'name': 'Ariana Grande', 'post': 'My pet happy dog!', 'description': 'Liked your post and commented'},
+    {'name': 'Stephen Curry', 'post': 'Good morning everyone!', 'description': 'Mentioned you in a comment'},
+    {'name': 'Manny Pacquiao', 'post': 'Weekend plans', 'description': 'Commented on your post'},
+    {'name': 'Jerrymie Liwag', 'post': 'Lab Activity 2', 'description': 'Replied to your comment'},
+    {'name': 'Olivia Rodrigo', 'post': 'New profile picture', 'description': 'Liked your post'},
+    {'name': 'Cristiano Ronaldo', 'post': 'My pet happy dog!', 'description': 'Reacted to your post'},
+    {'name': 'The Weeknd', 'post': 'Throwback photo', 'description': 'Tagged you in a photo'},
+    {'name': 'Jade Ashley Bino', 'post': 'Study session', 'description': 'Liked your post'},
+    {'name': 'Sarah Geronimo', 'post': 'Lab Activity 2', 'description': 'Liked your comment'},
+    {'name': 'Dwayne Johnson', 'post': 'Good morning everyone!', 'description': 'Shared your post'},
+    {'name': 'Adele', 'post': 'Weekend plans', 'description': 'Commented on your post'},
+    {'name': 'Keanu Reeves', 'post': 'My pet happy dog!', 'description': 'Replied to your comment'},
   ];
 
   @override
